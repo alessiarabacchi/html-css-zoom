@@ -9,9 +9,11 @@ img {
 }
 
 .container {
-  max-width: 1080px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow: hidden;
+  background-color: black;
+  height: 100vh;
 }
 
 .debug {
@@ -28,6 +30,7 @@ img {
   background-color: black;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .button-speaker {
@@ -39,4 +42,37 @@ img {
   border-radius: 10px;
   line-height: 10px;
   margin-top: 30px;
+}
+
+/*MAIN*/
+.section-container section {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0 15px;
+  background-color: black;
+  width: 2900px;
+  height: calc(100vh - 130px - 80px);
+  overflow: scroll;
+  position: relative;
+}
+
+.card {
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 400px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  float: inline-start;
+}
+
+.name-student {
+  color: white;
+  padding: 10px;
+  background-color: #888;
+  border-radius: 10px;
+  position: absolute;
 }
